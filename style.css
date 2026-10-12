@@ -1,0 +1,159 @@
+body{
+  background:#f8f7f2;
+  color:#2c342e;
+  font-family:Arial,sans-serif
+}
+.brand{
+  font:23px Georgia;
+  color:#344b3c;
+  text-decoration:none
+}
+.brand span{
+  color:#cf7651
+}
+header nav a,footer a{
+  font-size:12px;
+  color:#69736a;
+  text-decoration:none
+}
+.eyebrow,.meta,.section-title span{
+  font-size:9px;
+  letter-spacing:.14em;
+  font-weight:600;
+  color:#849084
+}
+.intro h1{
+  font:500 clamp(46px,7vw,76px)/1.04 Georgia;
+  letter-spacing:-.05em;
+  margin:18px 0
+}
+.intro h1 em{
+  color:#657c69
+}
+.intro-note{
+  font:16px/1.75 Georgia;
+  color:#737970
+}
+.section-title{
+  border-bottom:1px solid #dbded6;
+  padding-bottom:14px
+}
+.section-title h2{
+  font:23px Georgia;
+  margin:0
+}
+.post{
+  display:block;
+  text-decoration:none;
+  color:inherit
+}
+.art{
+  height:215px;
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center
+}
+.art>span{
+  position:absolute;
+  top:14px;
+  left:16px;
+  font-size:10px;
+  color:#778377
+}
+.art-a{
+  background:#e4e9df
+}
+.art-a i{
+  width:120px;
+  height:120px;
+  border:1px solid #819081;
+  border-radius:50%;
+  position:relative
+}
+.art-a i:before,.art-a i:after{
+  content:"";
+  position:absolute;
+  background:#b47e5b;
+  width:1px;
+  height:155px;
+  left:50%;
+  top:-18px;
+  transform:rotate(45deg)
+}
+.art-a i:after{
+  transform:rotate(-45deg);
+  background:#7f927f
+}
+.art-b{
+  background:#eae3d8
+}
+.art-b i{
+  width:115px;
+  height:90px;
+  border:1px solid #a58c73;
+  box-shadow:14px 14px 0 -1px #eae3d8,14px 14px #a58c73
+}
+.art-c{
+  background:#e9e8d8
+}
+.art-c i{
+  width:85px;
+  height:85px;
+  border-radius:50%;
+  background:#d0ad60;
+  box-shadow:0 0 0 20px #d9dfcc,0 0 0 43px #e0e4d7
+}
+.meta{
+  margin:22px 0 9px;
+  font-size:8px
+}
+.post h3{
+  font:23px/1.2 Georgia;
+  max-width:290px
+}
+.post p:not(.meta){
+  font-size:13px;
+  line-height:1.75;
+  color:#747a72
+}
+.read{
+  color:#4c6854;
+  border-bottom:1px solid #b3bdb2;
+  padding:6px 0;
+  font-size:11px
+}
+.post:hover h3,.post:hover .read{
+  color:#b15e40
+}
+.newsletter{
+  border-top:1px solid #dbded6;
+  margin-top:65px!important
+}
+.newsletter h2{
+  font:28px Georgia
+}
+.newsletter a{
+  font-size:12px;
+  color:#48624f
+}
+footer{
+  font-size:10px;
+  color:#8b9188
+}
+@media(max-width:575px){
+  .intro-note{
+    margin-top:12px
+  }
+  .art{
+    height:195px
+  }
+  .post h3{
+    max-width:none
+  }
+  footer{
+    gap:12px;
+    flex-wrap:wrap
+  }
+}
