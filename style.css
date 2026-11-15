@@ -1,159 +1,156 @@
-body{
-  background:#f8f7f2;
-  color:#2c342e;
-  font-family:Arial,sans-serif
+/* Page colors and text. */
+body {
+  background: #d9efff;
+  color: #2c342e;
+  font-family: Arial, sans-serif;
 }
-.brand{
-  font:23px Georgia;
-  color:#344b3c;
-  text-decoration:none
+
+.brand {
+  color: #344b3c;
+  font-family: Georgia, serif;
+  font-size: 23px;
+  text-decoration: none;
 }
-.brand span{
-  color:#cf7651
+
+.brand span {
+  color: #cf7651;
 }
-header nav a,footer a{
-  font-size:12px;
-  color:#69736a;
-  text-decoration:none
+
+header nav a,
+footer a {
+  color: #69736a;
+  font-size: 13px;
+  text-decoration: none;
 }
-.eyebrow,.meta,.section-title span{
-  font-size:9px;
-  letter-spacing:.14em;
-  font-weight:600;
-  color:#849084
+
+.eyebrow,
+.meta,
+.section-title span {
+  color: #849084;
+  font-size: 10px;
+  letter-spacing: 1px;
 }
-.intro h1{
-  font:500 clamp(46px,7vw,76px)/1.04 Georgia;
-  letter-spacing:-.05em;
-  margin:18px 0
+
+.intro h1 {
+  margin: 18px 0;
+  font-family: Georgia, serif;
+  font-size: 54px;
 }
-.intro h1 em{
-  color:#657c69
+
+.intro h1 em {
+  color: #657c69;
 }
-.intro-note{
-  font:16px/1.75 Georgia;
-  color:#737970
+
+.intro-note {
+  color: #737970;
+  font-family: Georgia, serif;
+  line-height: 1.7;
 }
-.section-title{
-  border-bottom:1px solid #dbded6;
-  padding-bottom:14px
+
+.section-title {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #dbded6;
 }
-.section-title h2{
-  font:23px Georgia;
-  margin:0
+
+.section-title h2 {
+  font-family: Georgia, serif;
+  font-size: 23px;
 }
-.post{
-  display:block;
-  text-decoration:none;
-  color:inherit
+
+.post {
+  display: block;
+  padding: 14px;
+  background: #edf7ff;
+  border: 1px solid #d6e7f2;
+
+
+  color: inherit;
+  text-decoration: none;
+
 }
-.art{
-  height:215px;
-  position:relative;
-  overflow:hidden;
-  display:flex;
-  align-items:center;
-  justify-content:center
+
+
+.art {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 190px;
+  overflow: hidden;
+
 }
-.art>span{
-  position:absolute;
-  top:14px;
-  left:16px;
-  font-size:10px;
-  color:#778377
+
+.art > span {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  color: #778377;
+  font-size: 12px;
 }
-.art-a{
-  background:#e4e9df
+
+.art-a { background: #c6e4f8; }
+.art-b { background: #c6e4f8; }
+.art-c { background: #c6e4f8; }
+
+
+
+.meta {
+  margin-top: 18px;
 }
-.art-a i{
-  width:120px;
-  height:120px;
-  border:1px solid #819081;
-  border-radius:50%;
-  position:relative
+
+.post h3 {
+  max-width: 300px;
+  font-family: Georgia, serif;
+  font-size: 22px;
 }
-.art-a i:before,.art-a i:after{
-  content:"";
-  position:absolute;
-  background:#b47e5b;
-  width:1px;
-  height:155px;
-  left:50%;
-  top:-18px;
-  transform:rotate(45deg)
+
+.post p:not(.meta) {
+  color: #747a72;
+  font-size: 14px;
+  line-height: 1.6;
 }
-.art-a i:after{
-  transform:rotate(-45deg);
-  background:#7f927f
+
+.read,
+.newsletter a {
+  color: #4c6854;
 }
-.art-b{
-  background:#eae3d8
+
+.newsletter {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #dbded6;
 }
-.art-b i{
-  width:115px;
-  height:90px;
-  border:1px solid #a58c73;
-  box-shadow:14px 14px 0 -1px #eae3d8,14px 14px #a58c73
+
+.newsletter h2 {
+  font-family: Georgia, serif;
 }
-.art-c{
-  background:#e9e8d8
+
+footer {
+  color: #8b9188;
+  font-size: 12px;
 }
-.art-c i{
-  width:85px;
-  height:85px;
-  border-radius:50%;
-  background:#d0ad60;
-  box-shadow:0 0 0 20px #d9dfcc,0 0 0 43px #e0e4d7
+
+/* Keep every blog card on its own row at all screen sizes. */
+.row.g-4 > article {
+  flex: 0 0 100%;
+  width: 100%;
 }
-.meta{
-  margin:22px 0 9px;
-  font-size:8px
-}
-.post h3{
-  font:23px/1.2 Georgia;
-  max-width:290px
-}
-.post p:not(.meta){
-  font-size:13px;
-  line-height:1.75;
-  color:#747a72
-}
-.read{
-  color:#4c6854;
-  border-bottom:1px solid #b3bdb2;
-  padding:6px 0;
-  font-size:11px
-}
-.post:hover h3,.post:hover .read{
-  color:#b15e40
-}
-.newsletter{
-  border-top:1px solid #dbded6;
-  margin-top:65px!important
-}
-.newsletter h2{
-  font:28px Georgia
-}
-.newsletter a{
-  font-size:12px;
-  color:#48624f
-}
-footer{
-  font-size:10px;
-  color:#8b9188
-}
-@media(max-width:575px){
-  .intro-note{
-    margin-top:12px
+
+/* Make text and pictures fit on smaller screens. */
+@media (max-width: 575px) {
+  .intro h1 {
+    font-size: 40px;
   }
-  .art{
-    height:195px
-  }
-  .post h3{
-    max-width:none
-  }
-  footer{
-    gap:12px;
-    flex-wrap:wrap
+
+  .art {
+    height: 170px;
   }
 }
+
+
+/* Simple shared finish: light blue pages, clear text and plain borders. */
+body { background: #d9efff; color: #263746; }
+main, .app, .shell, .article-body, aside, article, .post { background-color: #eaf6ff; }
+button, .button { background-color: #3676a5; color: #fff; }
+input, button { font: inherit; }
+button { cursor: pointer; }
